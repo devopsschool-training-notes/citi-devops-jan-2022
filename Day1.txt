@@ -1,0 +1,85 @@
+Start Time - 10 AM
+End Time - 2:30 PM IST
+---------------------------
+BREAK - 15 mins for @11.30 AM
+LUNCH BREAK - 30 mins @1:00 PM
+-----------------------------
+Demo - 
+Lab - 
+-------------------------------
+
+
+Login
+	My Space(Rajesh)
+	DevOps
+		Blog
+			Post1
+				TEXT Content
+				Attachment1
+				Attachment2
+			Post2
+			Post3
+		Home Page
+			- Child Page1 
+				- Child Page1 
+					TEXT Content
+					Attachment1
+					Attachment2
+				- Child Page2
+			- Child Page2
+============================================
+site === Only meant for Cloud
+--------------------------------------
+Atlasssion - Confluence on Cloud'
+---------------------------------------
+ORG
+-----
+unique Domain
+-----------------------
+https://rpstraining.atlassian.net/
+https://citi.atlassian.net/
+
+rpstraining == SITE == ONE Cloud Instance of Confluence
+			ONE Instance of Confluence Server @ Cloud
+
+rpstraining
+		Space1
+		Space2
+		Space3
+		Space5
+
+
+https://rpstraining.atlassian.net/
+DOMAIN NAME ------> IP ADDRESS & LB -----> APP
+================================================
+
+
+
+
+Assignment
+-----------------------
+What is Domain
+What is Subdomain
+how to Use Domain
+How to Link Domain with Server?
+===================================================
+Create 4 Difff Types of Space
+----------------------
+	Create 2 Pages on Home Page
+		-- Each Create 2 Child Page
+	Modify Home Page and Try EDITOR options
+	See page Versining
+	See Attachmenent
+	Move - Copy - Delete Options
+	Embed following on Home Page
+	--- List of Attachment
+	--- List of Pages	
+	--- List of Authors
+
+
+
+
+
+
+
+
