@@ -1,0 +1,143 @@
+SDLC Cycle
+-----------------------------------------------------
+https://www.devopsschool.com/path/
+https://www.devopsschool.com/blog/what-should-i-learn-for-devops-vs-devsecops-vs-sre/
+
+
+PLAN  -> Coding -> Code Review -> Build -> UT -> Package -> Archive -> Dep2QA -> AT -> CC 
+-----------------------------------------------------------------------------------------
+JIRA  -> GIT    -> SonarQube   -> Maven -> JUNIT->  Jar  -> nexus   -> Ansible -> Selenium -> Jacoco
+
+------------------------------------------------------------------------------------------------
+					Jenkins
+
+Confluence + Git + Maven + Gradle	
+Jira
+--------------------------------------------------------------------------
+
+Model
+----------------------------------------
+Waterfall Model -> Agile Model -> DevOps -> DevSecOps
+
+
+
+OpenShift | Kibana
+---------------------------------
+
+Docker -> Kubernetes -> OpenShift
+			---------------------------
+			A Platforms for your Running APPS
+					     -----------------------
+						DEV - QA - PROD
+
+PHYSCAL Server -> Virtual Server -> Container(Docker)
+		---> RPS Lab
+		----> AWS Lab
+
+https://www.google.com/search?q=youtube+TheDevOpsSchool+docker&rlz=1C1CHBF_enIN901IN901&oq=youtube+TheDevOpsSchool+docker&aqs=chrome..69i57j69i64.8436j0j9&sourceid=chrome&ie=UTF-8
+
+https://www.google.com/search?q=youtube+thedevopsschool+kubernetes&rlz=1C1CHBF_enIN901IN901&ei=7VXmYZ35PIee4-EPlOKJqAM&oq=youtube+TheDevOpsSchool+kubr&gs_lcp=Cgdnd3Mtd2l6EAMYADIHCCEQChCgATIHCCEQChCgAToHCAAQRxCwAzoFCAAQzQI6BQghEKABSgQIQRgASgQIRhgASgUIRBi8B0oFCEQYvBNKBAhDGAJKBQhFGLwTUMUGWLgMYJgVaAJwAngAgAHnAYgB3AWSAQUwLjIuMpgBAKABAcgBCMABAQ&sclient=gws-wiz
+
+
+
+Refer
+https://www.google.com/search?q=Youtube+TheDevOpsSchool+devops&rlz=1C1CHBF_enIN901IN901&oq=Youtube+TheDevOpsSchool+devops&aqs=chrome..69i57j69i64j69i60l2.10577j0j7&sourceid=chrome&ie=UTF-8
+
+
+
+What is Jira?
+-----------------------------
+- Its planning tool
+- By Atlassion
+- Dev in JAVA
+	- ANY OS
+	- Require JVM
+-----------------------------------------------
+How to install it?
+---------------------------
+Server - Cloud - DS
+
+ 1  java
+    2  yum install java-11-openjdk-devel
+    3  clear
+    4  cd
+    5  cd /opt/
+    6  wget https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-8.21.0.tar.gz
+    7  yum install wget -y
+    8  clear
+    9  wget https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-8.21.0.tar.gz
+   10  clear
+   11  ls
+   12  ls
+   13  clear
+   14  ls
+   15  tar -zxvf atlassian-jira-software-8.21.0.tar.gz
+   16  clear
+   17  ls
+   18  cd atlassian-jira-software-8.21.0
+   19  ls
+   20  cd atlassian-jira-software-8.21.0-standalone
+   21  clear
+   22  ls
+   23  cd bin/
+   24  ls
+   25  ./start-jira.sh
+   26  clear
+   27  ps -eaf | grep jira
+   28  clear
+   29  ls
+   30  clear
+   31  cd ..
+   32  clear
+   33  ls
+   34  pwd
+   35  ls
+   36  cd atlassian-jira/
+   37  pwd
+   38  vi WEB-INF/classes/jira-application.properties
+   39  ls
+   40  pwd
+   41  cd ..
+   42  ls
+   43  cd bin/
+   44  ls
+   45  ./shutdown.sh
+   46  ls
+   47  ./start-jira.sh
+   48  clear
+   49  history
+
+  58  ls
+   59  wget https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-8.21.0-x64.bin
+   60  clear
+   61  ls
+   62  chmod 755 atlassian-jira-software-8.21.0-x64.bin
+   63  ls
+   64  ./atlassian-jira-software-8.21.0-x64.bin
+   65  history
+
+
+----------------------------------------
+65.1.85.70
+centos
+
+https://www.devopsschool.com/blog/complete-guide-of-java-installation-in-linux/
+
+
+http://65.1.85.70:8080/
+rajesh
+rajesh123
+
+
+
+
+
+
+https://www.atlassian.com/software/jira/update
+
+
+
+
+
+
+
