@@ -17,7 +17,7 @@ $ git init
 
 Step 2 - Have a code for versioning
 
-Step 3 - Add a Code to Git
+Step 3 - Add a Code to Git [ Send a files from Working dir to STAGING ]
 $ git add file1.java
 
 ONE TIME
@@ -27,7 +27,7 @@ git config user.email "rajesh@devopsschool.com"
 git config --list
 --------------------------------------------------
 
-Step 4 - Commit a Code to Git
+Step 4 - Commit a Code to Git [ Send a files from STAGING To Repo ]
 $ git commit -m"Adding my first commit"
 
 Step 5 - See a Committed changes
@@ -58,5 +58,152 @@ index 0000000..2d037f0
 +THIS IS LINE #4
 +THIS IS LINE #5
 \ No newline at end of file
+
+
+
+What is a8ea41af7317ce22aff4a012ca3cf9e451175f57?
+
+--> 
+What ever you commit
+	--- a file
+	--- lots of files
+	--- files + dir
+	--------------------------	
+		It create 1 OBJECT
+			that is identified by a8ea41af7317ce22aff4a012ca3cf9e451175f57
+				Called - CHECKSUM - HASH - COMMITID
+				--- 40 CHAR HASH
+				---- BY SHA1 ALGO.
+
+
+=====================================
+Git workflow
+---------------------------------------
+
+ 541  git status
+  542  ls
+  543  git add file2.java
+  544  clear
+  545  git status
+  546  git add file3.java
+  547  git status
+  548  git commit -m"This is my 2nd commit" file2.java
+  549  git status
+  550  ls
+  551  git status
+# Modify a file1.java
+  552  git add file1.java
+  553  git status
+  554  git commit -m"Adding 3rd"
+  555  git status
+==================================================
+How can i version dir?
+How can i ADD All files?
+
+How can i rename a file
+How can i move a file 
+
+How can delete a file?
+How can i check a deleted a file?
+---------------------------
+
+ 567  git status
+  568  touch src/file1.txt
+  569  clear
+  570  git status
+  571  git add --all
+  572  git status
+  573  clear
+  574  git commit -m"adding all + dir"
+  575  clear
+  576  git status
+  577  ls
+  578  git log
+
+
+ 581  ls
+  582  mv file1.java file11.java
+  583  git status
+  584  git add --all
+  585  git status
+  586  git commit -m"rename 1"
+  587  git status
+  588  ls
+  589  git mv file2.java file22.java
+  590  git status
+  591  git commit -m"rename 2"
+
+----------------------------------------
+HEAD
+	- TIP OF THE CURRENT BRANCH
+
+Rajesh Kumar@DESKTOP-6KRAAR8 MINGW64 /c/git/repo1 (master)
+$ git log --oneline
+c710119 (HEAD -> master) rename 2		HEAD
+1da8584 rename 1				HEAD~1
+c3864de adding all + dir			HEAD~2
+5994832 Adding 3rd				HEAD~3
+15fcf22 This is my 2nd commit
+a8ea41a Adding my first commit
+
+
+index === STAGING AREA
+---------------------------------
+
+ 592  history
+  593  clear
+  594  git log
+  595  clear
+  596  git log --oneline
+  597  clear
+  598  git show HEAD~3
+  599  clear
+  600  ls
+  601  git status
+  602  git rm file3.java
+  603  git status
+  604  ls
+  605  git commit -m"delete a file"
+  606  git status
+  607  ls
+  608  clear
+  609  git log --oneline
+  610  ls
+  611  git checkout c710119
+  612  clear
+  613  ls
+  614  git checkout master
+  615  ls
+  616  git log --oneline
+  617  history
+
+
+
+----------------------------------------
+
+Git hub
+===================
+
+Git undoing
+-------------------
+Reset
+restore
+clean
+rebase
+
+Git stash
+------------------
+
+Git branching and merging
+------------------------------
+
+Git conflict resolve
+------------------------
+
+
+git ignore
+-----------------------
+
+
 
 
