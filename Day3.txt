@@ -1,0 +1,62 @@
+How to install git?
+----------------------------
+	Windows
+		exe from https://git-scm.com/
+		- git bash
+	Linux
+		sudo yum install git -y
+		sudo apt-get install git -y
+	Mac
+		dmg from https://git-scm.com/
+=================================================
+Git Basic Workflow
+================================================
+Step 1 - create a repo
+$ git init
+
+
+Step 2 - Have a code for versioning
+
+Step 3 - Add a Code to Git
+$ git add file1.java
+
+ONE TIME
+--------------------------------------------------
+git config user.name "Rajesh Kumar"
+git config user.email "rajesh@devopsschool.com"
+git config --list
+--------------------------------------------------
+
+Step 4 - Commit a Code to Git
+$ git commit -m"Adding my first commit"
+
+Step 5 - See a Committed changes
+
+$ git log
+commit a8ea41af7317ce22aff4a012ca3cf9e451175f57 (HEAD -> master)
+Author: Rajesh Kumar <rajesh@devopsschool.com>
+Date:   Wed Jan 19 11:10:48 2022 +0530
+
+    Adding my first commit
+
+$ git show a8ea41af7317ce22aff4a012ca3cf9e451175f57
+commit a8ea41af7317ce22aff4a012ca3cf9e451175f57 (HEAD -> master)
+Author: Rajesh Kumar <rajesh@devopsschool.com>
+Date:   Wed Jan 19 11:10:48 2022 +0530
+
+    Adding my first commit
+
+diff --git a/file1.java b/file1.java
+new file mode 100644
+index 0000000..2d037f0
+--- /dev/null
++++ b/file1.java
+@@ -0,0 +1,5 @@
++THIS IS LINE #1
++THIS IS LINE #2
++THIS IS LINE #3
++THIS IS LINE #4
++THIS IS LINE #5
+\ No newline at end of file
+
+
