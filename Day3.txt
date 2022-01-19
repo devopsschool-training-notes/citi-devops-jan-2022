@@ -181,7 +181,26 @@ index === STAGING AREA
 
 ----------------------------------------
 
-Git hub
+Git Hub
+	Cloud
+	Hosted - 
+	
+Git lab
+Bitbucket
+Gerrit
+AWS DevOps
+Azure DevOps
+GC
+------------------------------
+		UI
+		Issues
+		Wiki
+		RBAC
+		Manage multiple CR
+		++++
+
+GIT is not a server
+GITHUB SERVER - Can call it
 ===================
 
 Git undoing
@@ -194,8 +213,7 @@ rebase
 Git stash
 ------------------
 
-Git branching and merging
-------------------------------
+ 
 
 Git conflict resolve
 ------------------------
@@ -204,6 +222,85 @@ Git conflict resolve
 git ignore
 -----------------------
 
+How SSH Authentication public key and private key auth works?
+-------------------------------------------------------------\
+\
+SSH 	Vs 		HTTPS
+-------------------------------------------
+			username | PAT	 - 
+				 | https://github.com/settings/tokens
+
+Public key has to be upload to Github
 
 
+SSH - git@github.com:devopsschool-demo-temporary/jan192022.git
+HTTP - https://github.com/devopsschool-demo-temporary/jan192022.git
+
+
+git push origin master
+git push origin branch1
+git push git@github.com:devopsschool-demo-temporary/jan192022.git master
+
+git pull origin master
+git pull origin branch1
+git pull git@github.com:devopsschool-demo-temporary/jan192022.git master
+
+Videos
+https://www.google.com/search?q=TheDevOpsSchool+youtube+git&rlz=1C1CHBF_enIN901IN901&oq=TheDevOpsSchool+youtube+git&aqs=chrome..69i57j33i160.16906j0j7&sourceid=chrome&ie=UTF-8
+
+https://www.atlassian.com/git/tutorials
+
+Git undoing
+-------------------
+Reset
+restore
+clean
+rebase
+
+WORKING ---> STAGING --> REPO
+----------
+clean	------------------
+		reset    ------------
+			 revert
+
+ 630  git status
+  631  touch clean.txt
+  632  clear
+  633  git status
+  634  git clean -f -d
+  635  git status
+  636  ls
+  637  clear
+  638  touch reset.txt
+  639  git status
+  640  git add reset.txt
+  641  git status
+  642  git reset reset.txt
+  643  git status
+  644  clear
+  645  ls
+  646  git log --oneline
+  647  touch good.txt;git add .;git commit -m"Good Code"
+  648  git log --oneline
+  649  touch bad.txt;git add .;git commit -m"bad Code"
+  650  git log --oneline
+  651  ls
+  652  git restore 48d0634
+  653  git revert 48d0634
+  654  git log --oneline
+  655  ls
+  656  git diff 394f573 48d0634
+  657  git diff 394f573 cee2ee4
+
+---------------------
+GIT reset 
+	soft
+	mixed
+	hard
+---------------------
+
+---------------------------------------------------
+Tasks for me - 
+Write a Step by Step Guide for ------
+---------------------------------------------------
 
