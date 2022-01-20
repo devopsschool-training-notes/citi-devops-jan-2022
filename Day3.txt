@@ -304,3 +304,152 @@ Tasks for me -
 Write a Step by Step Guide for ------
 ---------------------------------------------------
 
+---------------------------------------------------
+===============================================================
+Git Branching and Merging
+Git conflict resolve
+Git stash
+rebase
+git ignore
+Fork
+===============================================================
+What is Branch?
+--------------
+You can always work in Branch. Default master.
+Its a code line for work and milestone
+
+Why Branching
+-------------------
+You dont want all code in ONE branch.
+-- Bugs Fixing 
+-- feature 
+-- Patch
+-- Hotfixed
+-- Some trial
+- Release
+
+
+Git Branching and Merging
+-----------------------------
+- Local Branch		- CAN COMMIT
+- Remote Branch		- CAN NOT USED FOR COMMIT - Only for Ref
+- Temporary Local branch	- 
+
+pull = Fetch + Merge
+
+ 508  git branch -a
+  509  ls
+  510  git branch
+  511  git branch -r
+  512  git branch -a
+
+Manisha
+----------------
+  499  start .
+  500  exit
+  501  clear
+  502  ls
+  503  touch manisha1.txt;git add .;git commit -m"adding manihsa"
+  504  git push origin master
+  505  history
+
+
+Suchi
+------------------------
+488  git branch -a
+  489  ls
+  490  git checkout master
+  491  ls
+  492  git checkout remotes/origin/master
+  493  ls
+  494  clear
+  495  git checkout master
+  496  history
+  497  clear
+  498  cd ..
+  499  start .
+  500  exit
+  501  git fetch origin master
+  502  ls
+  503  git checkout remotes/origin/master
+  504  ls
+  505  git checkout master
+  506  git branch -a
+  507  git merge remotes/origin/master
+  508  ls
+  509  history
+  510  ls
+  511  ls
+
+Resolving Conflict
+---------------------------------
+ 534  git checkout master
+  535  ls
+  536  git merge fea1
+  537  ls
+  538  clear
+  539  ls
+  540  vi fea1.txt
+  541  git add .
+  542  git commit -m"adding "
+  543  git checkout fea1
+  544  vi fea1.txt
+  545  git add .
+  546  git commit -m"adding "
+  547  git checkout master
+  548  clear
+  549  git merge fea1
+  550  git status
+  551  vi fea1.txt
+  552  git add .
+  553  git commit -m"adding "
+  554  git merge fea1
+
+
+==========================
+Git stash
+-----------------------------------
+
+
+rebase
+-----------------------------
+-- DO NOT REBASE PUBLiC
+-- USE REBASE ONLY TO AVOID RECURSIVE MERGE
+
+  620  mkdir rebase
+  621  cd rebase/
+  622  git init
+  623  touch file1.txt;git add .;git commit -m"adding 1"
+  624  touch file2.txt;git add .;git commit -m"adding 2"
+  625  touch file3.txt;git add .;git commit -m"adding 3"
+  626  clear
+  627  git branch fea1
+  628  git checkout fea1
+  629  touch fea1.txt;git add .;git commit -m"fea1"
+  630  touch fea2.txt;git add .;git commit -m"fea2"
+  631  clear
+  632  gitk
+  633  git checkout master
+  634  touch master1.txt;git add .;git commit -m"master1"
+  635  touch master2.txt;git add .;git commit -m"master2"
+  636  touch master3.txt;git add .;git commit -m"master3"
+  637  cleat
+  638  clear
+  639  gitk
+  640  git checkout fea1
+  641  gitk
+  642  git rebase master
+  643  gitk
+  644  history
+
+
+
+git ignore
+
+Fork
+
+---------------------------
+rajesh@devopsschool.com
+---------------------------
+history of commands
+
