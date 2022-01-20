@@ -1,0 +1,59 @@
+What is Maven?
+--------------------------------
+	Build Tool
+	Software Project mgmt tool
+
+	Dev in JAVA
+			Platform inDe
+			JVM
+	by Apache
+	
+	Free and Open Source
+
+	Current - 3.X
+
+Why Maven?
+-------------------------------------
+	1 BUILD X20 times in a day
+	----------------------------
+	Create a dir struc
+	Download Source
+	Download Dep lib
+	Set Env
+	Compile
+	test
+	Package
+	Dep2Nexus
+	----------------------
+	Automation
+	- Batch
+	- Bash
+	- Python
+	- Perl
+	
+	BUT
+	- Maven	
+	- Gradle
+	- Ant
+	- Msbuild
+	
+	Designed for Build Automation
+	- Easy to implement - learn - extends - dubg - share - 
+
+How to install it?
+----------------------------
+1. Install JDK 11		- https://jdk.java.net/archive/
+					
+2. Set JAVA_HOME		C:\tools\Java\jdk-11.0.8
+				C:\tools\Java\jdk-11.0.8\bin - PATH
+3. Download Maven Zip	- 	https://maven.apache.org/download.cgi	
+4. Set Maven-home/bin into PATH
+
+			C:\tools\maven\bin into PATH
+
+How to verify?
+$ mvn
+$ mvn --version
+
+
+
