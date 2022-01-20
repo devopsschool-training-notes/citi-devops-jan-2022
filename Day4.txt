@@ -54,6 +54,124 @@ How to install it?
 How to verify?
 $ mvn
 $ mvn --version
+===========================================================
 
 
 
+
+[ERROR] No goals have been specified for this build. You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+
+What is goals
+what is lifecycle
+what is phase
+<plugin-prefix>:<goal>
+<plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>
+
+available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy
+
+--------------------
+hOW MAVEN WORKS???
+
+Maven as a Software
+---------------
+	Maven Core
+		- Feature (Plugins)
+			- Core Plugins
+				Dire Struc
+				Prep Build
+				Lib Dep
+				Compile
+				Testing 
+				Package
+			- Community Plugins
+
+What is lifecycle?
+
+Human LifeCycle?
+-------------------------------
+Born -> Kid -> Teen --> Young -> Mid -> Old -> Die
+----------------------------------------------------
+			Phases
+
+Software Dev has Lifecycle
+------------------------------------------------
+Prep -> Compile -> Testing -> Packaging
+
+https://maven.apache.org/ref/3.8.2/maven-core/lifecycles.html
+
+PHASE		HOW???
+		<<GOAL>>	by Plugins
+---------------------------------------------
+compile		compile		XXX
+test		test		XXX	
+package		package		XXX
+install		install		XXX
+
+
+Dire Struc	USE GOAL by plugins		DONE
+Compile		USE GOAL by plugins
+Testing 	USE GOAL by plugins	
+Package		USE GOAL by plugins
+
+1st - DAY
+
+mvn archetype:generate -DgroupId=com.devopsschool.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate
+	plugin:goal
+
+-D - Pass param in Maven 
+
+groupId=com.devopsschool.software
+artifactId=chat
+archetypeArtifactId=maven-archetype-quickstart
+interactiveMode=false
+---------------------------
+microsoft
+	msoffice
+		word
+		powerpoint
+		excel
+--------------------------
+Package Structure ==  com.microsoft.msoffice.word
+
+package com.citi.chat.call
+import com.citi.mail.x
+
+com.microsoft.msoffice = GROUP ID
+word = ArtifactID
+
+
+archetypeArtifactId === 
+https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+
+
+mvn archetype:generate -DgroupId=com.devopsschool.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+
+
+
+mvn compile
+mvn test
+mvn package
+-----------------------------
+Customize LifeCycle and Use in Eclipse.
+---------------------------------
+	Eclipse
+	------
+	Editor
+		JDK (Default)
+		Maven (Default)
+			
+
+		c:/tool/maven
+
+
+Step 1 - mvn archetype:generate -DgroupId=com.devopsschool.software -DartifactId=chat -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Step 2 - 
+mvn compile
+mvn test
+mvn package
+
+ENFORCING A BEST PROCESS 
