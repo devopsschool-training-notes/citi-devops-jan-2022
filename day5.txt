@@ -45,3 +45,5 @@ task copyDocs(type: Copy) {
     from 'src'
     into 'ramu/src'
 }
+
+https://stackoverflow.com/questions/36863456/gradle-task-to-create-a-zip-archive-of-a-directory
