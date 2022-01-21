@@ -1,0 +1,10 @@
+Prep - 
+----------------------
+JAVA must be installed
+JAVA_HOME must be set.
+
+How to install Gradle?
+-------------------------
+1. Download Gradle zip file	https://gradle.org/releases/
+2. Extract it in c:/tools
+3. GRADLE_HOME/bin --> Path
