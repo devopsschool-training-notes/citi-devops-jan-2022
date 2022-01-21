@@ -47,3 +47,5 @@ task copyDocs(type: Copy) {
 }
 
 https://stackoverflow.com/questions/36863456/gradle-task-to-create-a-zip-archive-of-a-directory
+
+https://stackoverflow.com/questions/21612729/understanding-gradle-task-dependency-dependson
