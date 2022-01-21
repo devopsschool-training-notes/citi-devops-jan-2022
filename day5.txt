@@ -8,3 +8,40 @@ How to install Gradle?
 1. Download Gradle zip file	https://gradle.org/releases/
 2. Extract it in c:/tools
 3. GRADLE_HOME/bin --> Path
+
+
+MSBUILD 	| ANT 		| MAVEN | 	GRADLE
+------------------------------------
+target    	target		goal		task
+defaul.msbuild	build.xml	pom.xml		build.gradle
+================================================
+
+What is your Project?
+Write a Psucode 
+Each Step of Psucode == ONE TASK in Gradle
+==========================================
+project - Write a build.gradle which would have 3 tasks.
+- one for Copy
+- One for Delete
+- One for zip
+Each task must have 
+----------------
+Description in it
+
+
+task Task6 {
+	description "This is task 6"
+	doLast {
+			println "This is a Last Task6"
+	}
+		
+	doFirst {
+			println "This is a First Task6"
+		}
+
+	}
+
+task copyDocs(type: Copy) {
+    from 'src'
+    into 'ramu/src'
+}
