@@ -175,3 +175,96 @@ mvn test
 mvn package
 
 ENFORCING A BEST PROCESS 
+====================================================
+pom.xml
+--------------------------------
+What is POM?
+-------------
+Project Object Model
+---------------------
+XML file
+Contains
+	-- Co-ordinates
+		--- Project Name
+		--- Group ID
+		--- Artifact ID
+		--- Version
+
+ 
+  <groupId>com.devopsschool.software</groupId>
+  <artifactId>chat</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>chat</name>
+  <url>http://www.devopsschool.com</url>
+  
+&&&&
+- Dependency
+- Properties
+- Modules
+- plugins
+
+
+version
+===================================
+Release - STABLE CODE 		- 1.0 1.1 1.1.1
+Snapshot - NOT STABLE CODE	- 1.0-SNAPSHOT 1.1-SNAPSHOT 1.1.1-SNAPSHOT
+
+packaging
+================================
+jar
+war
+ear
+pom
+
+
+Dependency - Maven is ur depe mgmt tool.
+-------------------------------------
+ProductX
+---------
+	Code
+	---- Import LIB from External
+	Dont u think - External lib has to be in JVM???
+	
+	
+How maven download a lib and from where?
+====================================================
+
+mvn ---> pom.xml
+	 (read <dependencies>)
+			try to Look that LIB in Local Repository
+						----------------
+						of Maven
+						C:\Users\Rajesh Kumar\.m2\repository
+			If FOUND - Set in CLASSPATH
+
+			if NOT Found then
+				Download from Central Repo https://repo.maven.apache.org/maven2/
+			to Local Repo and Set in Classpath
+
+
+
+mvn archtype	- Built-in
+-----------------
+10 libs ---- this would be downloaded in .m2
+
+  <phase>install</phase>
+--------------
+This would install ur packages to maven local repo
+  <phase>deploy</phase>
+--------------
+This would install ur packages to maven local repo & central repo or pvt repo
+
+
+clean - target
+
+
+
+
+
+
+
+
+
+
+
